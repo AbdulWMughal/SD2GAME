@@ -17,12 +17,15 @@ def show_game_over(score):
     text_rect = text.get_rect(center=(WIDTH/2, HEIGHT/2 - 50))
     score_text = font_small.render(f"Final Score: {score}", True, (255, 255, 255))
     score_rect = score_text.get_rect(center=(WIDTH/2, HEIGHT/2 + 50))
+    menu_text = font_small.render("Press 'M' for Main Menu", True, (255, 255, 255))
+    menu_rect = menu_text.get_rect(center=(WIDTH/2, HEIGHT/2 + 20))
     screen.blit(text, text_rect)
     screen.blit(score_text, score_rect)
+    screen.blit(menu_text, menu_rect)
     pygame.display.flip()
     pygame.mixer.music.load('game_sounds/gameover.mp3')
     pygame.mixer.music.play()
-    pygame.time.delay(4000)
+    pygame.time.delay(8000)
     music_background()
 
 
