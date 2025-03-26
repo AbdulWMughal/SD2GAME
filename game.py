@@ -22,7 +22,7 @@ def game_loop():
     music_background()
     screen = pygame.display.set_mode((WIDTH, HEIGHT), pygame.RESIZABLE)
     surface = pygame.Surface((WIDTH, HEIGHT))
-    pygame.display.set_caption("Alien Attack")
+    pygame.display.set_caption("Space Shooter")
     clock = pygame.time.Clock()
 
 
